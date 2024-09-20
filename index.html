@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALECAM - Kiss Cam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ALECAM - Kiss Cam</h1>
+    </header>
+
+    <main>
+        <section id="camera-section">
+            <h2>¡Sonríe para la Kiss Cam!</h2>
+            <video id="video" autoplay playsinline></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+            <img id="kiss-frame" src="kiss-frame.png" alt="Kiss Cam Frame" style="position: absolute; top: 0; left: 0; width: 100vw; pointer-events: none;">
+        </section>
+
+        <section id="action-section">
+            <h2>Acciones</h2>
+            <div class="buttons">
+                <button id="capture-btn">Tomar Foto</button>
+                <button id="download-btn" style="display:none;">Descargar Foto</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
